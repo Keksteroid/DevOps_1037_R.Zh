@@ -1,5 +1,4 @@
 
-
 #!/bin/bash
 
 y="y"
@@ -18,14 +17,13 @@ then
     if [ "$answer" == "$y" ]; then
         sudo useradd -G root $user
     else
-    echo "Ok, loh, pnh"
+    echo "Ok, good bye"
 
         if [[ $str =~ $regex ]]; then
-            echo "Whole match is ${BASH_REMATCH[0]}"
+            echo "The user $user is created and added to ROOT group!"
         fi
     fi
 fi
-
 
 
 
